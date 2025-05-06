@@ -1,0 +1,125 @@
+.admin-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logout-btn {
+  padding: 0.5rem 1rem;
+  background: var(--error-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.users-table th,
+.users-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.users-table th {
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+.delete-btn {
+  padding: 0.5rem 1rem;
+  background: var(--error-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+.admin-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .admin-container {
+    width: 95%;
+    padding: 0.5rem;
+  }
+
+  .admin-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .admin-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .admin-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .admin-name {
+    font-size: 1rem;
+    padding-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .users-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .users-table th,
+  .users-table td {
+    padding: 0.5rem;
+    font-size: 14px;
+  }
+
+  .delete-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 12px;
+  }
+
+  .logout-btn {
+    padding: 0.3rem 0.8rem;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .admin-container {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .users-table th,
+  .users-table td {
+    padding: 0.3rem;
+    font-size: 12px;
+  }
+}
